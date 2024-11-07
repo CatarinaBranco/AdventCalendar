@@ -406,3 +406,4 @@ zict @ file:///home/conda/feedstock_root/build_artifacts/zict_1681770155528/work
 zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1718013267051/work
 zope.interface @ file:///Users/runner/miniforge3/conda-bld/zope.interface_1716554566868/work
 zstandard==0.22.0
+gunicorn
