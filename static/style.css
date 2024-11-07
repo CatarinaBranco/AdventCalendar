@@ -1,0 +1,116 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff; /* Default background for main pages */
+}
+
+/* Background color for day pages */
+.day-page {
+    background-color: #000000; /* Change this color as desired */
+    color: #ffffff; /* Optional: set text color for contrast */
+}
+
+/* Example adjustments for day-page */
+.day-page h1,
+.day-page p {
+    color: #ffffff; /* Ensures text is visible on the dark background */
+}
+
+/* Calendar grid container */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* Styling for each day */
+.day {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+/* Updated link styling within each day */
+.day a {
+    text-decoration: none;       /* Removes underline from links */
+    color: #000000;              /* Sets text color to black */
+    font-weight: bold;           /* Keeps text bold */
+    font-family: 'Times New Roman', Times, serif; /* Changes the font type */
+}
+
+.day:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .calendar-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .calendar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.day-image {
+    max-width: 10%;   /* Limit the image width */
+    height: auto;     /* Maintain aspect ratio */
+    margin: 20px 0;   /* Add spacing around the image */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.day-page img, .day-page iframe {
+    display: block;       /* Forces each element to take up a full line */
+    margin: 20px auto;    /* Centers and adds spacing around each element */
+}
+
+.decorative-ratos {
+    position: absolute;       /* Position the image independently of other elements */
+    top: 100px;                /* Vertical positioning from the top */
+    right: 200px;              /* Horizontal positioning from the right */
+    width: 250px;             /* Sets the image size */
+    transform: rotate(15deg); /* Rotates the image 15 degrees */
+    z-index: -1;              /* Places the image behind other content */
+    opacity: 1;             /* Optional: adds slight transparency */
+}
+
+.left-decorative-leoes {
+    position: absolute;
+    top: 180px;               /* Adjust vertical positioning */
+    left: 200px;              /* Position the image on the left side */
+    width: 250px;            /* Set the size of the image */
+    transform: rotate(-15deg); /* Rotate the image -15 degrees */
+    z-index: -1;             /* Ensure it appears behind other content */
+    opacity: 1;            /* Optional: slight transparency */
+}
+
+.day-2-image {
+    max-width: 30%;       /* Custom size for Day 2 image */
+    height: auto;         /* Maintain aspect ratio */
+    margin: 20px 0;   /* Add spacing around the image */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.message2 {
+    font-family: 'Satisfy', cursive;    /* Change the font to Georgia, or any preferred font */
+    font-size: 2.5em;                 /* Adjust font size */
+    color: #555555;                   /* Set a custom color */
+    font-style: italic;               /* Make the text italic */
+    margin-top: 20px;                 /* Add space above the second message */
+    text-align: center;               /* Center-align the second message */
+}

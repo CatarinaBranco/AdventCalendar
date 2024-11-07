@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day {{ day }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body class="day-page">
+    <h1>Day {{ day }}</h1>
+    
+    <!-- Display the message -->
+    <p>{{ message | safe }}</p>
+    
+    <!-- Conditionally display the image for Day 1 and Day 2, video for Day 3 -->
+    {% if video %}
+        <!-- Show the video for Day 3 -->
+        <video width="560" height="315" controls loop autoplay muted>
+            <source src="{{ url_for('static', filename=video) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    {% elif image %}
+        <!-- Show the image for Day 1 and Day 2, with special class for Day 2 -->
+        <img src="{{ url_for('static', filename=image) }}" 
+             alt="Image for Day {{ day }}" 
+             class="day-image {% if day == 2 %}day-2-image{% endif %}">
+    {% endif %}
+    
+    <!-- Conditionally display the second message if it exists -->
+    {% if message2 %}
+        <p class="message2">{{ message2 | safe }}</p>
+    {% endif %}
+
+    <!-- Display the Spotify music player -->
+    <iframe width="300" height="80" src="{{ music_link | safe }}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
+</body>
+</html>
