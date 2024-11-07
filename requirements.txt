@@ -1,7 +1,3 @@
-aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1713964913137/work
-aioitertools @ file:///home/conda/feedstock_root/build_artifacts/aioitertools_1663521246073/work
-aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_1667935791922/work
-alabaster @ file:///home/conda/feedstock_root/build_artifacts/alabaster_1704848697227/work
 altair @ file:///home/conda/feedstock_root/build_artifacts/altair-split_1711824856061/work
 altgraph==0.17.4
 anaconda-anon-usage @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b9r8fbjsvb/croot/anaconda-anon-usage_1710965086703/work
