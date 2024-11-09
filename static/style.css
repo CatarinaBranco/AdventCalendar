@@ -68,7 +68,7 @@ body {
 }
 
 .day-image {
-    max-width: 40%;   /* Limit the image width */
+    max-width: 20%;   /* Limit the image width */
     height: auto;     /* Maintain aspect ratio */
     margin: 20px 0;   /* Add spacing around the image */
     border-radius: 10px; /* Optional: rounded corners */
@@ -108,9 +108,8 @@ body {
 
 .message2 {
     font-family: 'Satisfy', cursive;    /* Change the font to Georgia, or any preferred font */
-    font-size: 2em;                 /* Adjust font size */
+    font-size: 1.25em;                 /* Adjust font size */
     color: #555555;                   /* Set a custom color */
-    font-style: italic;               /* Make the text italic */
     margin-top: 20px;                 /* Add space above the second message */
     text-align: center;               /* Center-align the second message */
 }
