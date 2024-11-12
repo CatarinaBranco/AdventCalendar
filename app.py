@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+from datetime import datetime
+
 
 app = Flask(__name__)
 if __name__ == '__main__':
@@ -30,7 +32,7 @@ DAILY_MESSAGES = {
     # Ought know
     4: {
         "message": "Ainda que uma música muito raivosa, faz-me lembrar de ti. <br> Foste tu que me mostras-te, uma noite no Rodas junto com o Bertinho e o Ricardo",
-        "music_link": "https://open.spotify.com/embed/track/4Od7rEL8ehrcRr38g86OMm?utm_source=generator",  # Replace with another video
+        "music_link": "https://open.spotify.com/embed/track/17ZAZ24Eyh5fKqQ06u4R3d?utm_source=generator",  # Replace with another video
         "image": "pictures/xxx.jpg"
     },
     # Make it wit you. Bed
@@ -180,8 +182,14 @@ def index():
 
 @app.route('/day/<int:day>')
 def show_day(day):
+    today = datetime.now().day  # Get today's day of the month
+
+    if day > today:
+        # If the day is in the future, show a warning message
+        warning_message = "Não sejas batoteiro!"
+        return render_template('day.html', day=day, warning_message=warning_message)
     content = DAILY_MESSAGES.get(day, {"message": "No content available for today.", "music_link": "#", "image": "pictures/default.jpg"})
-    return render_template('day.html',day=day,message=content["message"],message2=content.get("message2"),music_link=content["music_link"],image=content.get("image"),video=content.get("video")  # Pass video path if it exists
+    return render_template('day.html',day=day,message=content["message"],message2=content.get("message2"),music_link=content["music_link"],image=content.get("image"),video=content.get("video"), warning_message=None  # Pass video path if it exists
     )
 
 
