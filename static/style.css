@@ -113,3 +113,10 @@ body {
     margin-top: 20px;                 /* Add space above the second message */
     text-align: center;               /* Center-align the second message */
 }
+
+.warning-image {
+    max-width: 60%;       /* Size for the warning image */
+    height: auto;
+    border: 2px solid red;  /* Optional: red border to highlight the warning */
+    margin-top: 20px;
+}

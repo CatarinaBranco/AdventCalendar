@@ -33,7 +33,7 @@ DAILY_MESSAGES = {
     4: {
         "message": "Ainda que uma música muito raivosa, faz-me lembrar de ti. <br> Foste tu que me mostras-te, uma noite no Rodas junto com o Bertinho e o Ricardo",
         "music_link": "https://open.spotify.com/embed/track/17ZAZ24Eyh5fKqQ06u4R3d?utm_source=generator",  # Replace with another video
-        "image": "pictures/xxx.jpg"
+        "image": "pictures/day4.gif"
     },
     # Make it wit you. Bed
     5: {
@@ -44,7 +44,7 @@ DAILY_MESSAGES = {
     # Fly way from here
     6: {
         "message": "Ouvia mutio esta música há uns anos. <br>Eu não tenho uma favorita deles, mas gostava muito desta",
-        "music_link": "https://open.spotify.com/embed/track/1OxcIUqVmVYxT6427tbhDW?utm_source=generator",  # Replace with another video
+        "music_link": "https://open.spotify.com/embed/track/5PxQhGYkbGXzjOLaUfAYMf?utm_source=generator",  # Replace with another video
         "image": "pictures/day6.jpg"
     },
     # stuck in the middle with you
@@ -74,8 +74,9 @@ DAILY_MESSAGES = {
         "image": "pictures/day10.jpg"
     },
     # Lilac Wine
+    # 
     11: {
-        "message": "Os teus lábios",
+        "message": "Os teus lábios <br> <br> <br> PS.: Adorei acampar contigo. <br>Parece que já vai tão longe o Verão",
         "music_link": "https://open.spotify.com/embed/track/1StXVL5gClph4z4XzanYko?utm_source=generator",  
         "image": "pictures/day11.jpg"
     },
@@ -92,8 +93,9 @@ DAILY_MESSAGES = {
         "image": "pictures/day13.jpg"
     },
     # Submarine 
+    # Férias. A beiça.
     14: {
-        "message": "Foi a recomendação de Junho 2024. <br> Gostei muito. Na altura ainda pensavas tatuar o submarino",
+        "message": "Foi a recomendação de Junho 2024. <br> Gostei muito. Na altura ainda pensavas tatuar o submarino <br> <br> <br> PS.: A beiça da tua namorada",
         "music_link": "https://open.spotify.com/embed/track/5S3NpJBqacEUrxceiAy5lI?utm_source=generator",  
         "image": "pictures/day14.jpg"
     },
@@ -106,10 +108,11 @@ DAILY_MESSAGES = {
         "message2": "I've been saving up my time <br> So I could spend it all on you <br> All I need is to see you smile"
     },
     # Dancing cheek to cheek
+    # Jantar da Bea
     16: {
         "message": "O teu toque. Estou no céu",
         "music_link": "https://open.spotify.com/embed/track/5TNpCThzzXHEipXGKgNG8T?utm_source=generator",  
-        "image": "pictures/day16.jpg"
+        "image": "pictures/day16.gif"
     },
     # Taras e manias
     # Careta Rui
@@ -140,7 +143,7 @@ DAILY_MESSAGES = {
     },
     # Echo
     21: {
-        "message": "A tua paciência para o mundo",
+        "message": "A tua paciência para o mundo <br> <br> <br> PS.: qualquer semelhança com a realidade é pura coincidência",
         "music_link": "https://open.spotify.com/embed/track/3ypXaNibspfxvUIKpzUkfz?utm_source=generator",  
         "image": "pictures/day21.jpg"
     },
@@ -184,10 +187,11 @@ def index():
 def show_day(day):
     today = datetime.now().day  # Get today's day of the month
 
-    if day > today:
-        # If the day is in the future, show a warning message
-        warning_message = "Não sejas batoteiro!"
-        return render_template('day.html', day=day, warning_message=warning_message)
+    #if day > today:
+    #    # If the day is in the future, show a warning message
+    #    warning_message = "Não sejas batoteiro!"
+    #    warning_image = "pictures/warning.jpg"
+    #    return render_template('day.html', day=day, warning_message=warning_message, warning_image=warning_image)
     content = DAILY_MESSAGES.get(day, {"message": "No content available for today.", "music_link": "#", "image": "pictures/default.jpg"})
     return render_template('day.html',day=day,message=content["message"],message2=content.get("message2"),music_link=content["music_link"],image=content.get("image"),video=content.get("video"), warning_message=None  # Pass video path if it exists
     )
