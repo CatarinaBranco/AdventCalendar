@@ -29,7 +29,7 @@
             <!-- Show the image for Day 1 and Day 2, with special class for Day 2 -->
             <img src="{{ url_for('static', filename=image) }}" 
                 alt="Image for Day {{ day }}" 
-                class="day-image {% if day == 2 or day == 19 %}day-2-image{% endif %}">
+                class="day-image {% if day == 2 or day == 19 or day == 8%}day-2-image{% endif %}">
         {% endif %}
     <!-- Conditionally display the second message if it exists -->
         {% if message2 %}

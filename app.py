@@ -10,7 +10,7 @@ if __name__ == '__main__':
 # content per day
 DAILY_MESSAGES = {
     # head over feet
-    # doll picture. 
+    # doll picture
     1: {
         "message": "Juro que não tenho palavras para descrever a panóplia de emoções que despoltas em mim. <br> Mas nos próximos 25 dias vou me esforçar, muito.<br> <br>Para o primeiro dia vou começar por salientar o quão especial me fazes sentir.<br><br> Fazes-me sentir uma boneca. Esta música faz-me pensar isso.",
         "music_link": "https://open.spotify.com/embed/track/735rjks7kQgWCjTQlIHMuH?utm_source=generator",  # Replace with a valid YouTube embed link
