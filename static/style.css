@@ -100,7 +100,7 @@ body {
 }
 
 .day-2-image {
-    max-width: 50%;       /* Custom size for Day 2 image */
+    max-width: 60%;       /* Custom size for Day 2 image */
     height: auto;         /* Maintain aspect ratio */
     margin: 20px 0;   /* Add spacing around the image */
     border-radius: 10px; /* Optional: rounded corners */

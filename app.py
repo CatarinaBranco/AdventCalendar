@@ -24,6 +24,7 @@ DAILY_MESSAGES = {
         "image": "pictures/day2.jpg"
     },
     # Let's do it. 
+    # Magusto
     3: {
         "message": "Antes, quando ouvia esta música deixava-me a pensar se devia deixar andar ou não <br> Escolhi bem ",
         "music_link": "https://open.spotify.com/embed/track/4Od7rEL8ehrcRr38g86OMm?utm_source=generator",  # Replace with another video
@@ -31,11 +32,12 @@ DAILY_MESSAGES = {
     },
     # Ought know
     4: {
-        "message": "Ainda que uma música muito raivosa, faz-me lembrar de ti. <br> Foste tu que me mostras-te, uma noite no Rodas junto com o Bertinho e o Ricardo",
+        "message": "Um sonho tornado realidade <br> <br> <br> PS.: Ainda que uma música muito raivosa, faz-me lembrar de ti. <br> Foste tu que me mostras-te, uma noite no Rodas junto com o Bertinho e o Ricardo",
         "music_link": "https://open.spotify.com/embed/track/17ZAZ24Eyh5fKqQ06u4R3d?utm_source=generator",  # Replace with another video
         "image": "pictures/day4.gif"
     },
-    # Make it wit you. Bed
+    # Make it wit you. 
+    # Bed
     5: {
         "message": "Ao nível do sexo, não podia ser melhor Rui. Sinto-me sempre desejada. Dás-me tesão.",
         "music_link": "https://open.spotify.com/embed/track/6GyDY0yE47rfk8pcuKhioh?utm_source=generator",  # Replace with another video
@@ -43,7 +45,7 @@ DAILY_MESSAGES = {
     },
     # Fly way from here
     6: {
-        "message": "Ouvia mutio esta música há uns anos. <br>Eu não tenho uma favorita deles, mas gostava muito desta",
+        "message": "Objetivo de vida: preparar contigo 80% dos jantares que ainda vou ter na vida",
         "music_link": "https://open.spotify.com/embed/track/5PxQhGYkbGXzjOLaUfAYMf?utm_source=generator",  # Replace with another video
         "image": "pictures/day6.jpg"
     },
@@ -88,9 +90,9 @@ DAILY_MESSAGES = {
     },
     # Polly 
     13: {
-        "message": "Esta música não é muito bonita <br> Quando era mais nova vi a história e ficou me marcada <br> Não era a minha música preferida (de longe), mas dizia-me alguma coisa",
+        "message": "Fazes-me muito feliz mesmo <br> <br> <br> PS.: Esta música não é muito bonita <br> Quando era mais nova vi a história e ficou me marcada <br> Não era a minha música preferida (de longe), mas dizia-me alguma coisa",
         "music_link": "https://open.spotify.com/embed/track/2SJ38LDlkNjwWSUq98r4Q5?utm_source=generator",  
-        "image": "pictures/day13.jpg"
+        "image": "videos/day13.jpg"
     },
     # Submarine 
     # Férias. A beiça.
@@ -155,7 +157,7 @@ DAILY_MESSAGES = {
         "image": "pictures/day22.jpg"
     },
     # Emoji of a wave
-    # Halloween
+    # Praia
     23: {
         "message": "Transmites-me paz",
         "music_link": "https://open.spotify.com/embed/track/5ddXMXmXZ2FN4iliTG20nO?utm_source=generator",  # Replace with another video
