@@ -31,10 +31,11 @@ DAILY_MESSAGES = {
         "image": "pictures/day3.jpg"
     },
     # Ought know
+    # Foto com nina
     4: {
         "message": "Um sonho tornado realidade <br> <br> <br> PS.: Ainda que uma música muito raivosa, faz-me lembrar de ti. <br> Foste tu que me mostras-te, uma noite no Rodas junto com o Bertinho e o Ricardo",
         "music_link": "https://open.spotify.com/embed/track/17ZAZ24Eyh5fKqQ06u4R3d?utm_source=generator",  # Replace with another video
-        "image": "pictures/day4.gif"
+        "image": "pictures/day4.jpg"
     },
     # Make it wit you. 
     # Bed
@@ -92,7 +93,7 @@ DAILY_MESSAGES = {
     13: {
         "message": "Fazes-me muito feliz mesmo <br> <br> <br> PS.: Esta música não é muito bonita <br> Quando era mais nova vi a história e ficou me marcada <br> Não era a minha música preferida (de longe), mas dizia-me alguma coisa",
         "music_link": "https://open.spotify.com/embed/track/2SJ38LDlkNjwWSUq98r4Q5?utm_source=generator",  
-        "image": "videos/day13.jpg"
+        "image": "videos/day13.mp4"
     },
     # Submarine 
     # Férias. A beiça.
