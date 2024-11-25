@@ -10,11 +10,11 @@
 <body class="day-page">
     <h1>Day {{ day }}</h1>
     <!--- check day -->
-    <!-- UNCOMMENT FROM HERE {% if warning_message %} 
+    {% if warning_message %} 
         <p>{{ warning_message | safe }}</p>
         <img src="{{ url_for('static', filename=warning_image) }}" alt="Warning Image" class="warning-image">
 
-    {% else %} UNCOMMENT TO HERE -->
+    {% else %} 
     <!-- Display the message -->
     <p>{{ message | safe }}</p>
     
@@ -35,7 +35,7 @@
         {% if message2 %}
             <p class="message2">{{ message2 | safe }}</p>
         {% endif %}
-    <!-- {% endif %} UNCOMMENT END OF IF-->       
+     {% endif %}        
     <!-- Display the Spotify music player -->
     <iframe width="300" height="80" src="{{ music_link | safe }}" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>
 </body>

@@ -178,9 +178,8 @@ DAILY_MESSAGES = {
         "music_link": "https://open.spotify.com/embed/track/0QTCTu0CXv4X1JEE4gNpGv?utm_source=generator",  # Replace with another video
         "image": "pictures/day25.jpg",
         "message2": "Like a wildfire",
-    }    
+    }  
 }
-
 
 @app.route('/')
 def index():
@@ -190,15 +189,14 @@ def index():
 def show_day(day):
     today = datetime.now().day  # Get today's day of the month
 
-    #if day > today:
-    #    # If the day is in the future, show a warning message
-    #    warning_message = "Não sejas batoteiro!"
-    #    warning_image = "pictures/warning.jpg"
-    #    return render_template('day.html', day=day, warning_message=warning_message, warning_image=warning_image)
+    if day > today:
+        # If the day is in the future, show a warning message
+        warning_message = "Não sejas batoteiro!"
+        warning_image = "pictures/warning.jpg"
+        return render_template('day.html', day=day, warning_message=warning_message, warning_image=warning_image)
     content = DAILY_MESSAGES.get(day, {"message": "No content available for today.", "music_link": "#", "image": "pictures/default.jpg"})
     return render_template('day.html',day=day,message=content["message"],message2=content.get("message2"),music_link=content["music_link"],image=content.get("image"),video=content.get("video"), warning_message=None  # Pass video path if it exists
     )
-
 
 if __name__ == '__main__':
     app.run(debug=True)
